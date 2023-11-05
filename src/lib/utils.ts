@@ -7,9 +7,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function constructMetadata({
-  title = "50 Mini web apps",
+  title = "50 mini web apps",
   description = "Building 50 mini web apps with NextJs, Typescript and Tailwind",
-  image = "/vercel.svg",
+  image = "/mini-web-apps.png",
   icons = "/favicon.ico",
   noIndex = false,
 }: {
@@ -39,7 +39,7 @@ export function constructMetadata({
       creator: "@gbfool",
     },
     icons,
-    metadataBase: new URL("https://the-stooge.vercel.app"),
+    metadataBase: new URL("https://50-mini-web-apps.vercel.app"),
     themeColor: "#FFF",
     ...(noIndex && {
       robots: {
