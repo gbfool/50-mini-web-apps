@@ -1,4 +1,5 @@
 "use client";
+import HomeBack from "@/components/HomeBack";
 import { cn } from "@/lib/utils";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -25,15 +26,7 @@ const ExpandingCard = () => {
 
   return (
     <div className="flex flex-col gap-2 items-stretch p-2 sm:p-4">
-      <div className="flex">
-        <Link
-          href="/"
-          className="flex gap-1 mt-6 items-center rounded-md px-2 py-1 hover:bg-zinc-200"
-        >
-          <ArrowLeft className="h-6 w-6" />
-          <h2 className="text-zinc-700 text-xl">Home</h2>
-        </Link>
-      </div>
+      <HomeBack />
       <div className="flex max-h-screen items-center justify-center overflow-hidden">
         {urls.map((url, index) => {
           const hideOnSmall = index > 2 ? "hidden sm:block" : "block";

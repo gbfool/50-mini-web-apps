@@ -40,7 +40,6 @@ export function constructMetadata({
     },
     icons,
     metadataBase: new URL("https://50-mini-web-apps.vercel.app"),
-    themeColor: "#FFF",
     ...(noIndex && {
       robots: {
         index: false,
