@@ -9,6 +9,7 @@ export default function Home() {
   const rows: RowProps[] = [
     { name: "Expanding Cards", route: "/expanding-cards" },
     { name: "Progress Steps", route: "/progress-steps" },
+    { name: "Rotating Navigation Animation", route: "/rotating-navigation-animation" },
   ];
   return (
     <div className="mt-24 w-[90vw] mx-auto flex flex-col">
