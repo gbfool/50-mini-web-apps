@@ -1,6 +1,14 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { DoorClosed, HammerIcon, Menu, X } from "lucide-react";
+import {
+  DoorClosed,
+  HammerIcon,
+  Home,
+  Mail,
+  Menu,
+  User,
+  X,
+} from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -81,6 +89,43 @@ const RotatingNavAnimation = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="fixed bottom-10 left-0">
+        <ul className="pl-8">
+          <li
+            className={cn(
+              "my-10 -translate-x-[100%] transform duration-500 ease-in flex gap-1 items-center delay-100",
+              {
+                "translate-x-0 delay-0": isOpen,
+              }
+            )}
+          >
+            <Home className="text-white" />
+            <p className="text-white">Home</p>
+          </li>
+          <li
+            className={cn(
+              "my-10 ml-4 -translate-x-[150%] transform duration-500 ease-in flex gap-1 items-center delay-100",
+              {
+                "translate-x-0 delay-0": isOpen,
+              }
+            )}
+          >
+            <User className="text-white" />
+            <p className="text-white">About</p>
+          </li>
+          <li
+            className={cn(
+              "my-10 ml-8 -translate-x-[200%] transform duration-500 ease-in flex gap-1 items-center delay-100",
+              {
+                "translate-x-0 delay-0": isOpen,
+              }
+            )}
+          >
+            <Mail className="text-white" />
+            <p className="text-white">Contact</p>
+          </li>
+        </ul>
       </div>
     </div>
   );
