@@ -9,12 +9,16 @@ export default function Home() {
   const rows: RowProps[] = [
     { name: "Expanding Cards", route: "/expanding-cards" },
     { name: "Progress Steps", route: "/progress-steps" },
-    { name: "Rotating Navigation Animation", route: "/rotating-navigation-animation" },
+    {
+      name: "Rotating Navigation Animation",
+      route: "/rotating-navigation-animation",
+    },
+    { name: "Hidden Search Widget", route: "/hidden-search-widget" },
   ];
   return (
     <div className="mt-24 w-[90vw] mx-auto flex flex-col">
       <div className="-m-1.5 overflow-x-auto flex justify-center items-center p-1.5">
-        <div className="border rounded-lg shadow overflow-hidden">
+        <div className="border rounded-lg shadow overflow-scroll">
           <table className="w-[60vw] divide-y divide-gray-200 ">
             <thead className="bg-gray-50 ">
               <tr>
