@@ -16,6 +16,7 @@ export default function Home() {
     { name: "Hidden Search Widget", route: "/hidden-search-widget" },
     { name: "Blurry loading", route: "/blurry-loading" },
     { name: "Scroll animation", route: "/scroll-animation" },
+    { name: "Split landing page", route: "/split-landing-page" },
   ];
   return (
     <div className="mt-24 w-[90vw] mx-auto flex flex-col">
