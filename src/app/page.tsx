@@ -17,6 +17,7 @@ export default function Home() {
     { name: "Blurry loading", route: "/blurry-loading" },
     { name: "Scroll animation", route: "/scroll-animation" },
     { name: "Split landing page", route: "/split-landing-page" },
+    { name: "Dad jokes", route: "/dad-jokes" },
   ];
   return (
     <div className="mt-24 w-[90vw] mx-auto flex flex-col">

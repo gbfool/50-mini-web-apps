@@ -4,7 +4,7 @@ interface ButtonProps {
   className?: string;
   children: React.ReactNode;
   onClick: MouseEventHandler<HTMLDivElement>;
-  isDisabled: boolean;
+  isDisabled?: boolean;
 }
 
 const Button = ({ className, children, onClick, isDisabled }: ButtonProps) => {
