@@ -18,6 +18,7 @@ export default function Home() {
     { name: "Scroll animation", route: "/scroll-animation" },
     { name: "Split landing page", route: "/split-landing-page" },
     { name: "Dad jokes", route: "/dad-jokes" },
+    { name: "Event keycodes", route: "/event-keycodes" },
   ];
   return (
     <div className="mt-24 w-[90vw] mx-auto flex flex-col">
